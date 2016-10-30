@@ -1,0 +1,32 @@
+esktop folder and the music folder. It also handles
+ localization (i.e. translation) of the filenames.
+ .
+ This extension sets the Gtk bookmark file and tracks changes of the locale
+ to notify the user on login about changed directory names.
+Homepage: http://www.freedesktop.org/wiki/Software/xdg-user-dirs
+Original-Maintainer: Sebastian Dröge <slomo@debian.org>
+
+Package: python-qt4-dbus
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 100
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: python-qt4
+Version: 4.9.1-2ubuntu1
+Provides: python2.7-qt4-dbus
+Depends: python-dbus (>= 0.84.0-2~), python2.7, python (>= 2.7), python (<< 2.8), libc6 (>= 2.1.3), libdbus-1-3 (>= 1.0.2), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.8.0-1~), libstdc++6 (>= 4.1.1)
+Description: DBus Support for PyQt4
+ The DBus module of PyQt4 provides integration of PyQt4 applications
+ with the DBus main loop.
+Homepage: http://www.riverbankcomputing.co.uk/software/pyqt/
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: libgudev-1.0-0
+Status: install ok installed
+Multi-Arch: same
+Priority: important
+Section: libs
+Installed-Size: 186
+Maintainer: Ubuntu Developers 

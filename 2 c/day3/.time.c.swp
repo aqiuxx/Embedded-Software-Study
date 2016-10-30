@@ -1,0 +1,306 @@
+ <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: libselinux
+Version: 2.1.0-4.1ubuntu1
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Description: SELinux runtime shared libraries
+ This package provides the shared libraries for Security-enhanced
+ Linux that provides interfaces (e.g. library functions for the
+ SELinux kernel APIs like getcon(), other support functions like
+ getseuserbyname()) to SELinux-aware applications. Security-enhanced
+ Linux is a patch of the Linux kernel and a number of utilities with
+ enhanced security functionality designed to add mandatory access
+ controls to Linux.  The Security-enhanced Linux kernel contains new
+ architectural components originally developed to improve the security
+ of the Flask operating system. These architectural components provide
+ general support for the enforcement of many kinds of mandatory access
+ control policies, including those based on the concepts of Type
+ Enforcement, Role-based Access Control, and Multi-level Security.
+ .
+ libselinux1 provides an API for SELinux applications to get and set
+ process and file security contexts and to obtain security policy
+ decisions.  Required for any applications that use the SELinux
+ API. libselinux may use the shared libsepol to manipulate the binary
+ policy if necessary (e.g. to downgrade the policy format to an older
+ version supported by the kernel) when loading policy.
+Original-Maintainer: Russell Coker <russell@coker.com.au>
+
+Package: libopenobex1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 88
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: libopenobex
+Version: 1.5-2build1
+Depends: libc6 (>= 2.4), libusb-0.1-4 (>= 2:0.1.12)
+Description: OBEX protocol library
+ The Object Exchange protocol can best be described as binary HTTP.
+ OBEX is optimised for ad-hoc wireless links and can be used to exchange
+ all kind of objects like files, pictures, calendar entries (vCal)
+ and business cards (vCard).
+ .
+ OBEX is builtin in devices like PDA's like the Palm Pilot, and mobile
+ phones like the Ericsson R320, Siemens S25, Siemens S45, Siemens ME45,
+ Nokia NM207 and Nokia 9110 Communicator.
+Original-Maintainer: Hendrik Sattler <debian@hendrik-sattler.de>
+Homepage: http://www.openobex.org
+
+Package: totem-common
+Status: install ok installed
+Priority: optional
+Section: video
+Installed-Size: 1804
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: all
+Source: totem
+Version: 3.0.1-0ubuntu21
+Depends: dconf-gsettings-backend | gsettings-backend
+Description: Data files for the Totem media player
+ Totem is a simple yet featureful media player for GNOME which can read
+ a large number of file formats.
+ .
+ This package contains common data files and translations.
+Homepage: http://www.gnome.org/projects/totem/
+Original-Maintainer: Sebastien Bacher <seb128@debian.org>
+
+Package: texlive-lang-other
+Status: install ok installed
+Priority: optional
+Section: tex
+Installed-Size: 184
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: texlive-lang
+Version: 2009-3
+Depends: dpkg (>= 1.14.18), tex-common (>= 2.00), texlive-base (>= 2009-1), texlive-common (>= 2009-1)
+Conffiles:
+ /etc/texmf/hyphen.d/10texlive-lang-other.cnf 106a7d0dc960ac539acd4d20cc09dfab
+Description: TeX Live: Other hyphenation files
+ Hyphenation patterns for languages with no other support.
+ .
+ This package includes the following CTAN packages:
+  hyphen-coptic -- Coptic fonts and LaTeX macros for general usage and for
+   philology.
+  hyphen-esperanto --
+  hyphen-estonian --
+  hyphen-icelandic -- Icelandic hyphenation patterns.
+  hyphen-indonesian --
+  hyphen-interlingua --
+  hyphen-irish --
+  hyphen-kurmanji --
+  hyphen-romanian --
+  hyphen-serbian -- Hyphenation patterns for Serbian Cyrillic.
+  hyphen-slovenian --
+  hyphen-turkish -- Hyphenation patterns for Turkish.
+  hyphen-uppersorbian --
+  hyphen-welsh -- Welsh hyphenation files for TeX
+Original-Maintainer: Debian TeX Maintainers <debian-tex-maint@lists.debian.es for
+ the GNOME desktop.
+
+Package: cups-filters
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 910
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.0.18-0ubuntu0.1
+Replaces: cups (<< 1.5.0-16), cups-common (<< 1.5.0-16), ghostscript-cups (<< 9.02~)
+Depends: libc6 (>= 2.15), libcups2 (>= 1.4.0), libcupsfilters1 (>= 1.0~b1), libcupsimage2 (>= 1.4.0), libfontconfig1 (>= 2.8.0), libgcc1 (>= 1:4.1.1), libijs-0.35 (>= 0.35), liblcms2-2 (>= 2.2+git20110628-2), libpoppler19, libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4), ghostscript (>= 9.02~), ttf-freefont | fonts-liberation | ttf-dejavu
+Recommends: colord, foomatic-filters (>= 4.0), ghostscript-cups (>= 9.02~)
+Suggests: foomatic-db-compressed-ppds | foomatic-db
+Breaks: cups (<< 1.5.0-16), cups-common (<< 1.5.0-16), ghostscript-cups (<< 9.02~)
+Conffiles:
+ /etc/fonts/conf.d/99pdftoopvp.conf a5221cfad70a981c80864229ef56586d
+Description: OpenPrinting CUPS Filters
+ This package provides additional CUPS filters which are not provided
+ by the CUPS project itself. This includes filters for a PDF based
+ printing workflow.
+Original-Maintainer: Debian CUPS Maintainers <pkg-cups-devel@lists.alioth.debian.org>
+Homepage: http://www.openprinting.org/
+
+Package: libportaudio2
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 218
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: portaudio19
+Version: 19+svn20111121-1
+Depends: libasound2 (>> 1.0.24.1), libc6 (>= 2.7), libjack-jackd2-0 (>= 1.9.5~dfsg-14) | libjack-0.116
+Pre-Depends: multiarch-support
+Description: Portable audio I/O - shared library
+ PortAudio is a portable audio I/O library designed for cross-platform
+ support of audio. It uses a callback mechanism to request audio
+ processing.  Audio can be generated in various formats, including 32
+ bit floating point, and will be converted to the native format
+ internally.
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
+Homepage: http://www.portaudio.com/
+
+Package: patch
+Status: install ok installed
+Multi-Arch: foreign
+Priority: standard
+Section: vcs
+Installed-Size: 229
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 2.6.1-3
+Depends: libc6 (>= 2.4)
+Suggests: ed, diffutils-doc
+Description: Apply a diff file to an original
+ Patch will take a patch file containing any of the four forms
+ of difference listing produced by the diff program and apply
+ those differences to an original file, producing a patched
+ version.
+Original-Maintainer: Christoph Berg <myon@debian.org>
+
+Package: gconf-service-backend
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 559
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: i386
+Source: gconf
+Version: 3.2.5-0ubuntu2
+Replaces: gconf-service (<< 3.2.5-0ubuntu2), gconf2-common (<< 3.2.3-2)
+Depends: gconf-service, libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libgconf-2-4 (= 3.2.5-0ubuntu2), libglib2.0-0 (>= 2.25.9), libldap-2.4-2 (>= 2.4.7), libxml2 (>= 2.7.4), gconf2-common (= 3.2.5-0ubuntu2)
+Breaks: gconf2-common (<< 3.2.3-2)
+Description: GNOME configuration database system (D-Bus service)
+ GConf is a configuration database system for storing application
+ preferences. It supports default or mandatory settings set by the
+ administrator, and changes to the database are instantly applied to all
+ running applications. It is written for the GNOME desktop but doesn't
+ require it.
+ .
+ This package contains the D-Bus enabled daemon that is used internally
+ by the GConf library to access configuration data.  It is an internal
+ implementation of gconf used to work around multiarch-related upgrade
+ problems, and will eventually be merged back into gconf-service.
+Homepage: http://projects.gnome.org/gconf/
+Original-Maintainer: Josselin Mouette <joss@debian.org>
+
+Package: libpango1.0-0
+Status: install ok inure: i386
+Source: graphviz
+Version: 2.26.3-10ubuntu1
+Depends: libc6 (>= 2.3.4)
+Conflicts: libgraphviz4
+Size: 28802
+Description: rich set of graph drawing tools - pathplan library
+ Graphviz is a set of graph drawing tools. See the description of the graphviz
+ package for a full description.
+ .
+ This package contains the pathplan library.
+Homepage: http://www.graphviz.org/
+Original-Maintainer: David Claughton <dave@eclecticdave.com>
+
+Package: emacs23-bin-common
+Priority: optional
+Section: editors
+Installed-Size: 431
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: emacs23
+Version: 23.3+1-1ubuntu9
+Depends: emacs23-common (= 23.3+1-1ubuntu9), libc6 (>= 2.4), liblockfile1 (>= 1.0)
+Size: 161472
+Description: The GNU Emacs editor's shared, architecture dependent files
+ GNU Emacs is the extensible self-documenting text editor.
+ This package contains the architecture dependent infrastructure
+ that's shared by emacs23, emacs23-lucid, and emacs23-nox.
+Homepage: http://www.gnu.org/software/emacs/
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: libtasn1-3
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 141
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 2.10-1ubuntu1.1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Size: 43834
+Description: Manage ASN.1 structures (runtime)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains runtime libraries.
+Homepage: http://www.gnu.org/software/libtasn1/
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+
+Package: firefox-locale-oc
+Priority: optional
+Section: web
+Installed-Size: 155
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: i386
+Source: firefox
+Version: 14.0.1+build1-0ubuntu0.12.04.1
+Size: 15126
+Description: Transitional package for unavailable language
+ This language is unavailable for the current version of Firefox
+ .
+ This is an empty transitional package to ensure a clean upgrade
+ process. You can safely remove this package after installation.
+
+Package: libsoup2.4-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 501
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: libsoup2.4
+Version: 2.38.1-1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.8), libxml2 (>= 2.7.4), glib-networking (>= 2.32.0)
+Pre-Depends: multiarch-support
+Size: 211344
+Description: HTTP library implementation in C -- Shared library
+ It was originally part of a SOAP (Simple Object Access Protocol)
+ implementation called Soup, but the SOAP and non-SOAP parts have now been
+ split into separate packages.
+ .
+ libsoup uses the Glib main loop and is designed to work well with GTK+
+ applications.  This enables GNOME applications to access HTTP servers
+ on the network in a completely asynchronous fashion, very similar to
+ the GTK+ programming model (a synchronous operation mode is also
+ supported for those who want it).
+ .
+ Features:
+  * Both asynchronous (GMainLoop and callback-based) and synchronous APIs
+  * Automatically caches connections
+  * SSL Support using GnuTLS
+  * Proxy support, including authentication and SSL tunneling
+  * Client support for Digest, NTLM, and Basic authentication
+  * Server support for Digest and Basic authentication
+  * Basic client-side SOAP and XML-RPC support
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: lsb-base
+Multi-Arch: foreign
+Priority: required
+Section: misc
+Installed-Size: 75
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: 
