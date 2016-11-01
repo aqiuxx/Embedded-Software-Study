@@ -1,0 +1,10 @@
+total 213
+-rwxrwxrwx 1 root root      0 Oct 28  2016 1.xxx
+-rwxrwxrwx 1 root root   7308 Oct 28  2016 a.out
+-rwxrwxrwx 1 root root 200704 Oct 28 13:48 core
+-rwxrwxrwx 1 root root    263 Oct 28 14:37 env.c
+-rwxrwxrwx 1 root root    237 Oct 28  2016 execve.c
+-rwxrwxrwx 1 root root     45 Oct 28 14:51 my.sh
+-rwxrwxrwx 1 root root    424 Oct 28 15:40 myshell.c
+-rwxrwxrwx 1 root root    222 Oct 28 15:03 process.c
+-rwxrwxrwx 1 root root   7157 Oct 28 15:09 xxx

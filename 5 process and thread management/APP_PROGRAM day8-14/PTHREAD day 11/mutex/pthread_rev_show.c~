@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <pthread.h>
+
+typedef struct{
+	char start[100];
+	int len;
+}ARG;
+
+void *revbuf(void *arg)
+{
+	ARG *arr = (ARG*)arg;
+
+	while(1)
+	{
+		int i = 0;
+		for(;i<arr->len/2; i++)
+		{
+			arr->start[i] = arr->start[i]^arr->start[arr->len-i-1];
+			arr->start[arr->len-i-1] = arr->start[i]^arr->start[arr->len-i-1];
+			arr->start[i] = arr->start[i]^arr->start[arr->len-i-1];
+		}
+	}
+}
+
+
+void *showbuf(void *arg)
+{
+	ARG *arr = (ARG*)arg;
+
+	while(1)
+		printf("%s\n", arr->start);
+}
+
+int main()
+{
+	ARG  = {"123456789"};
+
+	ARG arg = {buf, 9};
+
+	pthread_t t1, t2;
+	pthread_create(&t1, NULL, revbuf, &arg);
+	pthread_create(&t2, NULL, showbuf, &arg);
+
+	pthread_join(t1, NULL);
+	pthread_join(t2, NULL);
+}
+

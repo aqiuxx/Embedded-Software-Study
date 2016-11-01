@@ -1,0 +1,66 @@
+FN Thomson Reuters Web of Knowledge
+VR 1.0
+PT S
+AU Chaumet, B
+   Leverrier, B
+   Rougeot, C
+   Bouyat, S
+AF Chaumet, B.
+   Leverrier, B.
+   Rougeot, C.
+   Bouyat, S.
+BE Trommer, GF
+TI A New Silicon Tuning Fork Gyroscope for Aerospace Applications
+SO SYMPOSIUM GYRO TECHNOLOGY 2009
+SE SYMPOSIUM GYRO TECHNOLOGY
+LA English
+DT Proceedings Paper
+CT Symposium Gyro Technology 2009
+CY SEP 22-23, 2009
+CL Karlsruhe, GERMANY
+SP Univ Karlsruhe, Inst Syst Optimizat, German Inst Navigat
+AB For several years THALES Aerospace has been developing a silicon
+   micro-machined tuning fork gyroscope for military and civil
+   applications. The targeted performance is: bias and scale factor errors
+   of 10 degrees/h and 500ppm for a range of 1000 degrees/s.
+   The technology is based on Deep Reactive Ion Etching (DRIE) on a SOI
+   wafer. Associated with an in-plane design for the drive and sense modes,
+   this technology leads to a high geometric precision and allows the
+   realization of the sense and the drive mechanical resonators, and
+   trimming elements within a single active layer.
+   Good bias stability is achieved by cancelling the quadrature bias with
+   electrostatic trimming.
+   The signal processing of the gyro is primarily digital and consists of
+   two main closed loops, for controlling the drive and sense modes, and an
+   auxiliary loop for cancelling the quadrature bias.
+   The typical results obtained on a demonstrator of a third generation
+   device are the following: random walk=0.01 degrees/root h, bias
+   instability<0.1 degrees/h, noise of 0.005 degrees/s over 0-50Hz, with a
+   1000 degrees/s range (adjustable by the electronics), bias and scale
+   factor errors of 8 degrees/h and 28 ppm in the temperature range -25
+   degrees C, 70 degrees C, linearity error<0.1 degrees/s over 1000
+   degrees/s. A high g shock test of 20000g has been carried out on a
+   hardened prototype without any observable performance degradation.
+C1 [Chaumet, B.; Bouyat, S.] THALES Avion, F-86101 Chatellerault, France.
+RP Chaumet, B (reprint author), THALES Avion, 40 Rue Brelandiere,BP128, F-86101 Chatellerault, France
+EM bernard.chaumet@fr.thalesgroup.com
+   bertrand.le-verrier@fr.thalesgroup.com
+   claude.rougeot@fr.thalesgroup.com
+   stephane.bouyat@fr.thalesgroup.com
+NR 5
+TC 0
+Z9 0
+PU UNIV STUTTGART INST A FUR MECHANIK
+PI 70550 STUTTGART
+PA PFAFFENWALDRING 9, 70550 STUTTGART, GERMANY
+SN 1439-4502
+J9 SYMPOSIUM GYRO TECHN
+PY 2009
+PG 13
+WC Automation & Control Systems; Engineering, Electrical & Electronic;
+   Instruments & Instrumentation
+SC Automation & Control Systems; Engineering; Instruments & Instrumentation
+GA BSM38
+UT WOS:000284917000001
+ER
+EF
